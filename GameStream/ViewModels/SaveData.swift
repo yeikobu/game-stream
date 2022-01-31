@@ -36,7 +36,7 @@ class SaveData {
         
         print("Datos en user defaults: Email: \(savedEmail) y conrtraseña \(savedPass)")
         
-        if UserDefaults.standard.objectIsForced(forKey: "userDatas") != nil {
+        if UserDefaults.standard.objectIsForced(forKey: "userDatas") != false {
             savedEmail = UserDefaults.standard.stringArray(forKey: "userDatas")![0]
             savedPass =  UserDefaults.standard.stringArray(forKey: "userDatas")![1]
             print("Correo guardado: \(savedEmail)      Cotraseña guardada: \(savedPass)")

@@ -29,6 +29,7 @@ struct ContentView: View {
             }
             .navigationBarHidden(true)
         }
+        .navigationViewStyle(StackNavigationViewStyle()) //Esta linea de codigo se utiliza para que en el iPad se mustre la primera pantalla de manera correcta
     }
 }
 
